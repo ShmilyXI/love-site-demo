@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>恋爱日记 · 演示站</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --cream: #fff4f0; --pink: #ff8fb1; --yellow: #ffe9a3; --ink: #5a2b3c; }
+    * { box-sizing: border-box; margin: 0; }
+    body { min-height: 100svh; display: grid; place-items: center; padding: 24px 16px; background: var(--cream); color: var(--ink); font: 400 15px/1.6 'Noto Sans SC', 'PingFang SC', sans-serif; }
+    main { width: min(100%, 560px); display: grid; gap: 18px; text-align: center; }
+    h1 { font: 400 34px/1.2 'ZCOOL KuaiLe', 'PingFang SC', sans-serif; }
+    p.sub { opacity: .8; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    a.card { display: grid; gap: 6px; padding: 20px 18px; background: #fff; border: 3px solid var(--ink); border-radius: 24px; box-shadow: 5px 5px 0 var(--ink); color: inherit; text-decoration: none; transition: transform .15s; }
+    a.card:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 var(--ink); }
+    a.card b { font: 400 24px 'ZCOOL KuaiLe', sans-serif; }
+    a.card small { opacity: .75; }
+    .tag { justify-self: center; font-size: 13px; padding: 2px 12px; border: 2px solid var(--ink); border-radius: 999px; background: var(--yellow); }
+    .card.theme .tag { background: var(--pink); color: #fff; }
+    .note { font-size: 13px; opacity: .7; }
+    a.buy { justify-self: center; font-size: 14px; color: var(--ink); background: var(--yellow); border: 2px solid var(--ink); border-radius: 999px; padding: 6px 16px; box-shadow: 3px 3px 0 var(--ink); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>恋爱日记 · 演示站</h1>
+    <p class="sub">一个只属于两个人的私密小站。里面的阿南和小鹿、故事和照片都是虚构的示例。</p>
+    <div class="cards">
+      <a class="card" href="lite/"><span class="tag">普通版</span><b>奶油粉手账</b><small>全部功能，一套默认配色</small></a>
+      <a class="card theme" href="full/"><span class="tag">主题版</span><b>9 套配色 + 圣诞</b><small>首页最下面「换个颜色」可以切换</small></a>
+    </div>
+    <p class="note">进去要输口令：<b>1314</b>。演示站只能看，写的东西不会保存；恋爱地图需要高德 Key，演示站里没有接。</p>
+    <a class="buy" href="https://afdian.com/a/mowaai" target="_blank" rel="noopener">喜欢的话，在爱发电获取源码：afdian.com/a/mowaai</a>
+  </main>
+</body>
+</html>
